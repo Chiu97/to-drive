@@ -1,0 +1,27 @@
+.draggable-container, .placeholder-for-drag-component{
+    display: flex;
+    flex-direction: column;
+}
+
+.draggable-item {
+    background-color: aqua;
+    margin: 20px 0;
+    border: 1px solid gray;
+    height: 100px;
+}
+
+.draggable-dropable-active {
+    transform: rotate3d(1, 0, 0, 10deg)
+}
+
+.placeholder-for-drag-component {
+    min-height: 100px;
+    background-color: hotpink;
+    border: 2px dashed khaki;
+    padding: 10px 20px;
+}
+
+.drop-area--active {
+    transform: rotate3d(1, 0, 0, 30deg);
+    border-bottom: 3px solid yellow;
+}

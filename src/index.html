@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag&Drop with vanilla javascript</title>
+    <link href="./index.css" rel="stylesheet"/>
+    <script src="./main.js" async></script>
+</head>
+<body>
+    <div class="draggable-container">
+        <div 
+            class="draggable-item" 
+            draggable="true" 
+            data-id="draggable-1"
+            ondrop="handleDrop(event, false)"
+            ondragenter="handleDragEnter(event)"
+            ondragleave="handleDragLeave(event)"
+            ondragover="handleDragover(event)"
+            ondragstart="handleDragStart(event)">
+            1
+        </div>
+        <div 
+            class="draggable-item" 
+            draggable="true" 
+            data-id="draggable-2"
+            ondrop="handleDrop(event, false)"
+            ondragenter="handleDragEnter(event)"
+            ondragleave="handleDragLeave(event)"
+            ondragover="handleDragover(event)"
+            ondragstart="handleDragStart(event)">
+            2
+        </div>
+        <div 
+            class="draggable-item" 
+            draggable="true" 
+            data-id="draggable-3"
+            ondrop="handleDrop(event, false)"
+            ondragenter="handleDragEnter(event)"
+            ondragleave="handleDragLeave(event)"
+            ondragover="handleDragover(event)"
+            ondragstart="handleDragStart(event)">
+            3
+        </div>
+        <div 
+            class="draggable-item" 
+            draggable="true" 
+            data-id="draggable-4"
+            ondrop="handleDrop(event, false)"
+            ondragenter="handleDragEnter(event)"
+            ondragleave="handleDragLeave(event)"
+            ondragover="handleDragover(event)"
+            ondragstart="handleDragStart(event)">
+            4
+        </div>
+    </div>
+    <div 
+        class="placeholder-for-drag-component" 
+        ondragover="handleDragover(event)"
+        ondrop="handleDrop(event, true)"
+    >
+        You can drag onto this zone
+    </div>
+</body>
+</html>
