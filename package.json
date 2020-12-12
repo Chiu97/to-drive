@@ -1,0 +1,11 @@
+{
+  "name": "to-drive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": ["drag&drop", "vanilla-javascript"],
+  "author": "colin chiu",
+  "license": "MIT"
+}
